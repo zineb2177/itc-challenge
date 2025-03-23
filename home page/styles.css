@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+}
+body {
+    
+    background-color: #F9F3FF;
+    
+   
+}
+
+.container {
+   
+    margin: 0 auto;
+}
+
+/* Card Section */
+.card {
+    display: flex;
+    
+   
+    margin-left: 40px;
+    
+    margin-top: 40px;
+}
+
+/* Image Section */
+.image-section {
+    background-color: #DDD7F7;
+    height: 420px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.image-section img {
+    width: 400px;
+    height: 460px;
+    
+    
+    
+    
+}
+
+/* Content Section */
+.content-section {
+    margin-left: 70px;
+    
+}
+
+h1 {
+    font-size: 36px;
+    
+    color: #000;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #9537B3;
+}
+
+.content-section p {
+    font-size: 22px;
+    color: #6c6c6c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 22px;
+    color: #6c6c6c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Sub-Features */
+.sub-features {
+    display: flex;
+    
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.sub-features div {
+    display: flex;
+    
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 280;
+}
+.sub-features img {
+width: 32px;
+height: 32px;
+margin-top: 4px;
+}
+
+
+.sub-features h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin:  0;
+}
+
+.sub-features p {
+    font-size: 18px;
+    color:#6c6c6c;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .image-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content-section {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    ul li {
+        justify-content: center;
+    }
+
+    .sub-features {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .content-section p {
+        font-size: 18px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    .sub-features h3 {
+        font-size: 16px;
+    }
+
+    .sub-features p {
+        font-size: 14px;
+    }
+}
